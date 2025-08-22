@@ -1,0 +1,4 @@
+com\example\components\ReportComponents.class
+com\example\generator\CrosstabReportGenerator.class
+com\example\data_source\ReportDataSource.class
+com\example\style\ReportStyles.class
