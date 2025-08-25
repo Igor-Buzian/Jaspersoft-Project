@@ -1,4 +1,4 @@
-package com.example.jaspersoft;
+package com.example.jaspersoft.model;
 
 public class Holiday {
 
@@ -22,10 +22,6 @@ public class Holiday {
         this.COUNTRY = COUNTRY;
         this.DATE = DATE;
         this.NAME = NAME;
-    }
-
-
-    public Holiday() {
     }
 
 }

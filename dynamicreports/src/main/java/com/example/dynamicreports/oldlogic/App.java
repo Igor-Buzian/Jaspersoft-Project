@@ -1,4 +1,4 @@
-package com.example.dynamicreports;
+package com.example.dynamicreports.oldlogic;
 import net.sf.jasperreports.engine.JRDataSource;
 
 import java.util.Scanner;
@@ -12,15 +12,12 @@ public class App {
 
         System.out.println("Write tables (ex: country, name, date):");
 
-        // Создаем объект Scanner для чтения ввода
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         scanner.close();
 
-        // Разделяем строку на отдельные названия столбцов
         String[] columnNames = input.replaceAll(" ","").split("\\s*,\\s*");
 
-        // Проверяем, что пользователь что-то ввёл
         if (columnNames.length > 0 && !columnNames[0].isEmpty()) {
             System.out.println("Create a report with selected columns...");
             report.build(dataSource, columnNames);

@@ -1,12 +1,11 @@
 // ReportBaseFiller.java
-package com.example.jaspersoft;
+package com.example.jaspersoft.fillers;
 
 import net.sf.jasperreports.engine.*;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
-import java.util.Map;
 
 public abstract class ReportBaseFiller {
 

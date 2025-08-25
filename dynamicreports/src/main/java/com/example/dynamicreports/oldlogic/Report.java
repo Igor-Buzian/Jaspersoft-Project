@@ -1,4 +1,4 @@
-package com.example.dynamicreports;
+package com.example.dynamicreports.oldlogic;
 
 import net.sf.dynamicreports.report.builder.column.ColumnBuilder;
 import net.sf.dynamicreports.report.builder.column.TextColumnBuilder;

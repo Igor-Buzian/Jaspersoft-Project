@@ -1,9 +1,9 @@
 // MapReportFiller.java
-package com.example.jaspersoft;
+package com.example.jaspersoft.fillers;
 
-import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRMapCollectionDataSource;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -15,7 +15,6 @@ public class MapReportFiller extends ReportBaseFiller {
         try {
             JasperReport jasperReport = compileReport(jrxmlPath);
 
-            // Создаем данные в виде списка Map
             List<Map<String, ?>> data = new ArrayList<>();
             Map<String, Object> record1 = new HashMap<>();
             record1.put("COUNTRY", "Russa");
@@ -32,7 +31,7 @@ public class MapReportFiller extends ReportBaseFiller {
             JRMapCollectionDataSource mapDataSource = new JRMapCollectionDataSource(data);
 
             fillAndExportReport(jasperReport, mapDataSource, outputPath);
-            System.out.println("Raport for Map was success created: " + outputPath);
+            System.out.println("Report for Map was success created: " + outputPath);
         } catch (Exception e) {
             e.printStackTrace();
         }

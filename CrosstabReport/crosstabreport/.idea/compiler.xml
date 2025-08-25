@@ -9,8 +9,5 @@
         <module name="crosstabreport" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="crosstabreport" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
